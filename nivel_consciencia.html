@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nivel_consciencia.css">
+</head>
+
+<body>
+
+    <input type="number" id="idade" onchange="Mudar_Idade();">
+    <div class="cabecalho">
+        NÍVEL DE CONSCIÊNCIA
+        <span id="idade_info" class="subtitulo"></span>
+    </div>
+    <h1>Abertura Ocular</h1>
+    <div class="titulo2">
+        <select nome="format2" id="format2">
+            <option selected disabled>Abertura Ocular</option>=""></option>
+            <option value="espontânea">Espontânea</option>
+            <option value="comandoVerbal">Comando Verbal</option>
+            <option value="estimuloDoloroso">Estímulo Doloroso</option>
+            <option value="nenhuma">Nenhuma</option>
+        </select>
+    </div>
+    <h1>Resposta Verbal</h1>
+    <div class="titulo3">
+        <select nome="format3" id="format3">
+            <option selected disabled>Resposta Verbal</option>=""></option>
+            <option value="Orientado"><span id="1"></span></option>
+            <option value="Confuso"><span id="2"></span></option>
+            <option value="PalavrasInapropriadas"><span id="3"></span></option>
+            <option value="PalavrasInconpreemsíveis"><span id="4"></span></option>
+            <option value="nenhuma">Nenhuma Resposta</option>
+        </select>
+    </div>
+    <h1>Resposta Motora</h1>
+    <div class="titulo4">
+        <select nome="format4" id="format4">
+            <option selected disabled>Resposta Motora</option>=""></option>
+            <option value="ObedeceComandos"><span id="11"></span></option>
+            <option value="LocalizaDor"><span id="12"></span></option>
+            <option value="MovimentodRetirada"><span id="13"></span></option>
+            <option value="FlexãoAnormal"><span id="14"></span></option>
+            <option value="ExtensãoAnormal"><span id="15"></span></option>
+            <option value="nenhuma">Nenhuma</option>
+        </select>
+    </div>
+
+</body>
+<script>
+    function Mudar_Idade() {
+        var idade = parseInt(document.getElementById("idade").value);
+
+        if(idade>5) {
+            document.getElementById("idade_info").innerHTML = "Maior que 5 anos";
+            document.getElementById("1").innerHTML = "Orientado";
+            document.getElementById("2").innerHTML = "Confuso";
+            document.getElementById("3").innerHTML = "Palavras Confusas";
+            document.getElementById("4").innerHTML = "Palavras Incompreensíveis";
+
+            document.getElementById("11").innerHTML = "Obedece Comandos";
+            document.getElementById("12").innerHTML = "Localiza Dor";
+            document.getElementById("13").innerHTML = "Movimento de Retirada";
+            document.getElementById("14").innerHTML = "Flexão Anormal";
+            document.getElementById("15").innerHTML = "Extensão Anormal";
+        }
+        else {
+            document.getElementById("idade_info").innerHTML = "Menor que 5 anos";
+            document.getElementById("1").innerHTML = "Palavras e Frases Apropriadas";
+            document.getElementById("2").innerHTML = "Palavras Inapropriadas";
+            document.getElementById("3").innerHTML = "Choro Persistente ou Gritos";
+            document.getElementById("4").innerHTML = "Sons Incompreensíveis";
+
+            document.getElementById("11").innerHTML = "Obedece Prontamente";
+            document.getElementById("12").innerHTML = "Localiza Dor ou Estímulo Tátil";
+            document.getElementById("13").innerHTML = "Retirada do Segmento Estimulado";
+            document.getElementById("14").innerHTML = "Flexão Anormal (Decortificação)";
+            document.getElementById("15").innerHTML = "Extensão Anormal (Decerebração)";
+        }
+    }
+</script>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        area {
+            outline-color: #C1121F;
+        }
+
+        img{
+            max-width: 100%;
+            height: 100%;
+           
+        }
+
+        
+    
+
+
+
+    </style>
+</head>
+<body>
+    <img id="img" src="img/body.png" usemap="#image-map" height="50%">
+    <map name="image-map">
+        <area shape="circle" coords="175, 22.5, 27.5" href="mylink.html">
+        <area shape="circle" coords="175, 57.5, 12" href="mylink.html">
+        <area shape="circle" coords="115, 100, 20" href="mylink.html"       >
+        <area shape="circle" coords="70, 170, 15" href="mylink.html"      >
+        <area shape="circle" coords="290, 170, 15" href="mylink.html"   >
+        <area shape="circle" coords="180, 100, 37.5" href="mylink.html"   >
+        <area shape="circle" coords="175, 155, 25" href="mylink.html"     >
+        <area shape="circle" coords="242.5, 190, 40" href="mylink.html"     >
+        <area shape="circle" coords="210, 337.5, 62.5" href="mylink.html"   >
+        <area shape="circle" coords="280, 337.5, 62.5" href="mylink.html"   >
+        <area shape="circle" coords="242.5, 260, 10" href="mylink.html"     >
+
+    </map>
+
+    <p id="mouse-coordinates" class="mouse"></p>
+     <script src="Scripts/jquery-3.7.0.min.js"></script>
+     <!-- <script src="Scripts/jquery.rwdImageMaps.min.js"> </script> -->
+     
+     <script>
+     console.log("teste")
+     $(document).ready(function(e){
+        $('img[usemap]').rwdImageMaps();
+     });
+  
+    </script>
+    <script>
+        const imgElement = document.getElementById('img');
+        const mouseCoordinates = document.getElementById('mouse-coordinates');
+        
+        imgElement.addEventListener('mousemove', (event) => {
+            const imgRect = imgElement.getBoundingClientRect();
+            const xPercentage = ((event.clientX - imgRect.left) / imgRect.width) * 100;
+            const yPercentage = ((event.clientY - imgRect.top) / imgRect.height) * 100;
+            const pixelX = Math.round(xPercentage * imgElement.width / 100);
+            const pixelY = Math.round(yPercentage * imgElement.height / 100);
+            
+            mouseCoordinates.textContent = `Mouse Position: (${pixelX}px, ${pixelY}px)`;
+        });
+    </script>
+</body> 
+</html>
