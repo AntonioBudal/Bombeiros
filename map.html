@@ -75,15 +75,23 @@
         } 
 
         .opcoes{
-            width: 20%;
-            height: 10%;
+            width: 30%;
+            height: 50%;
             background-color: #1e232c;
+            display: flex;
+            flex-direction: column;
         }
 
         .tri{
             width: 100%;
             height: 30%;
             display: flex;
+            align-content: center;
+            justify-content: space-evenly;
+        }
+
+        .m{
+            flex-direction: column;
         }
 
 
@@ -109,23 +117,29 @@
 
     <div class="popUP">
         <div class="metade">
-            <div class="membro">
+            <div class="membro ">
                 <div class="img"><img src="img/Braco.png" alt=""></img></div>
                 <div class="desc">Antebraço Esquerdo</div>
             </div>
             <div class="x">X</div>
         </div>
         
-        <div class="metade">
-            <div class="opcoes"></div>
-            <div class="opcoes"></div>
-            <div class="opcoes"></div>
-            <div class="opcoes"></div>
-            <div class="opcoes"></div>
-            <div class="opcoes"></div>
-            <div class="opcoes"></div>
-            <div class="opcoes"></div>
-            <div class="opcoes"></div>
+        <div class="metade m">
+            <div class="tri">
+                <div class="opcoes"></div>
+                <div class="opcoes"></div>
+                <div class="opcoes"></div>
+            </div>
+            <div class="tri">
+                <div class="opcoes"></div>
+                <div class="opcoes"></div>
+                <div class="opcoes"></div>
+            </div>
+            <div class="tri">
+                <div class="opcoes"></div>
+                <div class="opcoes"></div>
+                <div class="opcoes"></div>
+            </div>
         </div>
     </div>
 
