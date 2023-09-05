@@ -57,7 +57,7 @@ html {
 
 fieldset {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: white;
+    color: #a3a3a3;
     width: 80%;
     height: 55%;
     font-size: 25px;
@@ -123,7 +123,7 @@ a.link1 {
 
 a.link3 {
     text-decoration: none;
-    color: white;
+    color: #a3a3a3;
     cursor: pointer;
     font-size: 140%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -162,7 +162,7 @@ a {
     border: none;
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
+    color: #a3a3a3;
     background-color: #213150;
     display: flex;
     flex-direction: row;
