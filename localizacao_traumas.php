@@ -22,64 +22,83 @@
     <div class="mapa">
     <div class="container">
             <img src="img/body.png" alt="" width= 100%>
-            <div class="cabeca"   id="01" onclick="criar(1,'cabeca')"></div>
-            <div class="pescoco"  id="02" onclick="criar(1,'pescoco')"></div>
-            <div class="ombroD"   id="03" onclick="mudar(3)"></div>
-            <div class="ombroE"   id="04" onclick="mudar(4)"></div>
-            <div class="bracoE"   id="05" onclick="mudar(5)"></div>
-            <div class="bracoD"   id="06" onclick="mudar(6)"></div>
-            <div class="peito"    id="07" onclick="mudar(7)"></div>
-            <div class="barriga"  id="08" onclick="mudar(8)"></div>
-            <div class="bingulin" id="09" onclick="mudar(9)"></div>
-            <div class="pernaD"   id="10" onclick="mudar(10)"></div>
-            <div class="pernaE"   id="11" onclick="mudar(11)"></div>
+            <div class="cabeca"   id="01" onclick="criar(1,'Cabeça')"></div>
+            <div class="pescoco"  id="02" onclick="criar(1,'Pescoço')"></div>
+            <div class="ombroD"   id="03" onclick="criar(1,'Ombro Direito')"></div>
+            <div class="ombroE"   id="04" onclick="criar(1,'Ombro Esquerdo')"></div>
+            <div class="bracoE"   id="05" onclick="criar(1,'Braço Esquerdo')"></div>
+            <div class="bracoD"   id="06" onclick="criar(1,'Braço Direito')"></div>
+            <div class="peito"    id="07" onclick="criar(1,'Peito')"></div>
+            <div class="barriga"  id="08" onclick="criar(1,'Barriga')"></div>
+            <div class="bingulin" id="09" onclick="criar(1,'Pélvis')"></div>
+            <div class="pernaD"   id="10" onclick="criar(1,'Perna Direita')"></div>
+            <div class="pernaE"   id="11" onclick="criar(1,'Perna Esquerda')"></div>
         </div>
     </div>
     
 
    
-        <div class="popUP" id="1">
+    <div class="popUP" id="1">
             <div class="m">
                 <div class="fechar" onclick="fechar(1)">X</div>
-                <img src="img/Cabeca.png" width="120px" height="150px" id="im" alt=""></img>
-                Cabeça
+                <img src="img/Cabeca.png" height="50%" id="im" alt=""></img>
+                <p id="mtd" >Cabeça<p>
             </div>
-            <div class="m">
-                <div class="tri">
-                    <div class="btn">
-                        FRA/LUX/ENT
-                    </div>
-                    <div class="btn">
-                        ESVICERAÇÃO
-                    </div>
-                    <div class="btn">
-                        QUEIMADURA
-                    </div>
+        <div class="m m1">
+            <div class="tri">
+                <div class="escolha">
+                    <input type="checkbox" id="check_1">
+                    <label for="check_1">FRA/LUX/ENT</label>    
                 </div>
-                <div class="tri">
-                    <div class="btn">
-                        FERIMENTOS 
-                    </div>
-                    <div class="btn">
-                        F.A.B/F.A.F
-                    </div>
-                    <div class="btn">
-                        QUEIMADURA
-                    </div>
+                
+                <div class="escolha">
+                    <input type="checkbox" id="check_2">
+                    <label for="check_2">ESVICERAÇÃO</label>  
                 </div>
-                <div class="tri">
-                    <div class="btn">
-                        HEMORRAGIA
-                    </div>
-                    <div class="btn">
-                        AMPUTAÇÃO
-                    </div>
-                    <div class="btn">
-                        QUEIMADURA
-                    </div>
+                
+                <div class="escolha">
+                    <input type="checkbox" id="check_3">
+                    <label for="check_3">QUEIMADURA</label>  
                 </div>
-            </div>            
-        </div>
+            </div>
+
+            <div class="tri">
+                <div class="escolha">
+                    <input type="checkbox" id="check_4">
+                    <label for="check_4">FERIMENTOS</label>  
+                </div>
+
+                <div class="escolha">
+                    <input type="checkbox" id="check_5">
+                    <label for="check_5">F.A.B/F.A.F</label> 
+                </div>
+
+                <div class="escolha">
+                    <input type="checkbox" id="check_6">
+                    <label for="check_6">QUEIMADURA</label>
+                </div>
+            </div>
+
+            <div class="tri">
+                <div class="escolha">
+                    <input type="checkbox" id="check_7">
+                    <label for="check_7">HEMARROGIA</label>
+                </div>
+                
+                <div class="escolha">
+                    <input type="checkbox" id="check_8">
+                    <label for="check_8">AMPTUÇÃO</label>
+                </div>
+                
+                <div class="escolha">
+                    <input type="checkbox" id="check_9">
+                    <label for="check_9">QUEIMADURA</label>
+                </div>
+            </div>
+        </div> 
+        
+        <div class="btnF"></div>
+    </div>
 
         
    
