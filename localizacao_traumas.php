@@ -37,11 +37,12 @@
     </div>
     
 
-   
-    <div class="popUP" id="1">
+    
+    <form class="popUP" id="1">
+    
             <div class="m">
                 <div class="fechar" onclick="fechar(1)">X</div>
-                <img src="img/Cabeca.png" height="50%" id="im" alt=""></img>
+                <img src="img/Cabeca.png" height="60%" id="im" alt=""></img>
                 <p id="mtd" >Cabeça<p>
             </div>
         <div class="m m1">
@@ -97,8 +98,9 @@
             </div>
         </div> 
         
-        <div class="btnF"></div>
-    </div>
+        <input type="submit" value="Enviar" name="entrarR" class="btnF">
+        </form> 
+ 
 
         
    

@@ -21,21 +21,21 @@
             include("localizacao_traumas.php");
         ?>
     </div>
-    <div class="pagina ">
+    <!-- <div class="pagina ">
         <?php 
-            include("dados_paciente.html");
+            // include("dados_paciente.html");
         ?>
-    </div>
-    <div class="pagina ">
+    </div> -->
+    <!-- <div class="pagina ">
         <?php 
-            include("observacoes.html");
+            // include("observacoes.html");
         ?>
-    </div>
-    <div class="pagina">
+    </div> -->
+    <!-- <div class="pagina">
         <?php 
-            include("nivel_consciencia.html");
+            // include("nivel_consciencia.html");
         ?>
-    </div>
+    </div> -->
     <div class="pagina"></div>
     
  

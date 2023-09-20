@@ -56,7 +56,9 @@ input{
     border-bottom: 2px solid #C1121F;
 }
 
-.tipos{
+
+
+.tipos,form{
     background-color: #C0C0C0;
     width: 80%;
     height: 250px;
@@ -82,14 +84,24 @@ input{
 
 .ocorrencia{
     width: 80%;
-    height: 50px;
+    height: 40px;
     min-height: 50px;
     background-color: #5B5B5B;
     display: flex;
+    
     align-items: center;
     justify-content: center;
     margin: 1%;
 
+}
+
+.e{
+    width: 80%;
+    height: 10%;
+    background-color: #AF1521;
+    border-bottom: 4px solid #90131D;
+    color: white;
+    padding-top: 1%;
 }
 
 
@@ -106,3 +118,10 @@ input{
     height: 7.5%;   
     background-color: #555555;
 }
+
+
+
+
+
+
+
